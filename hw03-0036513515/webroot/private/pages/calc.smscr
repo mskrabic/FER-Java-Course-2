@@ -1,0 +1,39 @@
+{$= "text/html" @setMimeType $}
+<html>
+ <head>
+ <title>Zbrajanje</title>
+ <style>
+ table, th, td {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+h1 {
+text-align: center;
+}
+table {
+  width: 100%;
+  }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+ </style>
+ </head>
+ <body>
+ <h1 class="center">Zbrajanje</h1>
+ <div class="center">
+ <table>
+ <thead>
+ <tr><th>a</th><th>b</th><th>a+b</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>{$= "varA" "1" @tparamGet $}</td><td>{$= "varB" "2" @tparamGet $}</td><td>{$= "zbroj" "3" @tparamGet $}</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <img src={$= "imgName" "" @tparamGet $} class="center"/>
+ </body>
+</html>

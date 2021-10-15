@@ -1,0 +1,14 @@
+{$= "text/html" @setMimeType $}
+<html>
+ <head>
+ <title>Promjena boje</title>
+ <style>
+
+ </style>
+ </head>
+ <body>
+ <h1 class="center">Dobrodošli!</h1>
+	<div>Boja pozadine je {$= "success" "" @tparamGet $} promjenjena.
+	<a href="/index2.html">Početna stranica</a><br/>
+ </body>
+</html>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+        version="3.1"
+		metadata-complete="true">
+  	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<display-name>Aplikacija za glasanje</display-name>
+	<description>
+		Aplikacija za glasanje
+	</description>  
+  
+	
+    <listener>
+		<listener-class>oprpp2.hw04.listeners.AppInfoListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>servlet1</servlet-name>
+		<servlet-class>oprpp2.hw04.servlets.ColorServlet</servlet-class>
+	</servlet>
+  
+	<servlet>
+		<servlet-name>servlet2</servlet-name>
+		<servlet-class>oprpp2.hw04.servlets.TrigonometricServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>servlet3</servlet-name>
+		<servlet-class>oprpp2.hw04.servlets.ReportServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>servlet4</servlet-name>
+		<servlet-class>oprpp2.hw04.servlets.PowerServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>servlet5</servlet-name>
+		<servlet-class>oprpp2.hw04.servlets.GlasanjeServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>servlet6</servlet-name>
+		<servlet-class>oprpp2.hw04.servlets.GlasanjeGlasajServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>servlet7</servlet-name>
+		<servlet-class>oprpp2.hw04.servlets.GlasanjeRezultatiServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>servlet8</servlet-name>
+		<servlet-class>oprpp2.hw04.servlets.GlasanjeGrafikaServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>servlet9</servlet-name>
+		<servlet-class>oprpp2.hw04.servlets.GlasanjeXlsServlet</servlet-class>
+	</servlet>
+  
+	<servlet-mapping>
+		<servlet-name>servlet1</servlet-name>
+		<url-pattern>/setcolor</url-pattern>
+	</servlet-mapping>
+  
+    <servlet-mapping>
+		<servlet-name>servlet2</servlet-name>
+		<url-pattern>/trigonometric</url-pattern>
+	</servlet-mapping>
+	
+	   <servlet-mapping>
+		<servlet-name>servlet3</servlet-name>
+		<url-pattern>/reportImage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>servlet4</servlet-name>
+		<url-pattern>/power</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>servlet5</servlet-name>
+		<url-pattern>/glasanje</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>servlet6</servlet-name>
+		<url-pattern>/glasanje-glasaj</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>servlet7</servlet-name>
+		<url-pattern>/glasanje-rezultati</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>servlet8</servlet-name>
+		<url-pattern>/glasanje-grafika</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>servlet9</servlet-name>
+		<url-pattern>/glasanje-xls</url-pattern>
+	</servlet-mapping>
+</web-app>

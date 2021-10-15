@@ -1,0 +1,7 @@
+1	Mikhail Tal	https://en.wikipedia.org/wiki/Mikhail_Tal
+2	Robert Fischer	https://en.wikipedia.org/wiki/Bobby_Fischer
+3	Magnus Carlsen	https://en.wikipedia.org/wiki/Magnus_Carlsen
+4	Garry Kasparov	https://en.wikipedia.org/wiki/Garry_Kasparov
+5	Hikaru Nakamura	https://en.wikipedia.org/wiki/Hikaru_Nakamura
+6	Antonio Radić	https://en.wikipedia.org/wiki/Agadmator
+7	Fabiano Caruana	https://en.wikipedia.org/wiki/Fabiano_Caruana
